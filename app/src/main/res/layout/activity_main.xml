@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/website_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/edittext_uri"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="62dp" />
+
+    <Button
+        android:id="@+id/open_website_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_uri"
+        android:layout_marginBottom="24dp"
+        android:onClick="openWebsite"
+        app:layout_constraintTop_toBottomOf="@id/website_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="116dp" />
+
+    <EditText
+        android:id="@+id/location_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/edittext_loc"
+        app:layout_constraintTop_toBottomOf="@id/open_website_button"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <Button
+        android:id="@+id/open_location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_loc"
+        android:onClick="openLocation"
+        app:layout_constraintTop_toBottomOf="@id/location_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <EditText
+        android:id="@+id/share_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/edittext_share"
+        app:layout_constraintTop_toBottomOf="@id/open_location_button"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <Button
+        android:id="@+id/share_text_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_share"
+        android:onClick="shareText"
+        app:layout_constraintTop_toBottomOf="@id/share_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="373dp" />
+
+
+    <Button
+        android:id="@+id/buttonCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="call 0742284044"
+        app:layout_constraintTop_toBottomOf="@id/share_text_button"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
